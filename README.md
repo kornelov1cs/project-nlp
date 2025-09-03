@@ -21,7 +21,7 @@ This is a Natural Language Processing project for university coursework.
 2. **Set up the environment**:
 
    ```bash
-   python -m venv nlp-env
+   python3 -m venv nlp-env
    source nlp-env/bin/activate  # On Windows: nlp-env\Scripts\activate
    pip install -r requirements.txt
    ```
