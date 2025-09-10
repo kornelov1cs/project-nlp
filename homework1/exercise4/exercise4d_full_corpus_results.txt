@@ -1,0 +1,30 @@
+Exercise 4d: Full Corpus Vowel Duplication Normalization Results
+======================================================================
+
+Files analyzed: 650
+Files with changes: 260
+Total transformation types: 83
+Total substitution instances: 831
+
+TOP 20 MOST FREQUENT TRANSFORMATIONS:
+---------------------------------------------
+ 1. 'ooo' → 'oo' (171 times)
+ 2. 'oooo' → 'oo' (102 times)
+ 3. 'ooooo' → 'oo' ( 68 times)
+ 4. 'eee' → 'ee' ( 65 times)
+ 5. 'aaa' → 'aa' ( 61 times)
+ 6. 'aaaa' → 'aa' ( 34 times)
+ 7. 'iii' → 'ii' ( 28 times)
+ 8. 'oooooo' → 'oo' ( 24 times)
+ 9. 'ooooooo' → 'oo' ( 23 times)
+10. 'eeee' → 'ee' ( 22 times)
+11. 'oooooooo' → 'oo' ( 15 times)
+12. 'aaaaa' → 'aa' ( 15 times)
+13. 'eeeeee' → 'ee' ( 12 times)
+14. 'ooooooooo' → 'oo' (  9 times)
+15. 'uuuu' → 'uu' (  9 times)
+16. 'eeeee' → 'ee' (  8 times)
+17. 'iiiii' → 'ii' (  7 times)
+18. 'oooooooooo' → 'oo' (  7 times)
+19. 'aaaaaaa' → 'aa' (  7 times)
+20. 'uuu' → 'uu' (  7 times)

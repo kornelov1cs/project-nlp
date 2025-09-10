@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "file_counts": {
+      "female": 325,
+      "male": 325,
+      "unknown": 0
+    },
+    "description": "Gender-separated emphatic vowel duplication analysis"
+  },
+  "results_by_gender": {
+    "female": {
+      "a": [
+        {
+          "word": "way",
+          "frequency": 7,
+          "examples": []
+        },
+        {
+          "word": "ha",
+          "frequency": 5,
+          "examples": []
+        },
+        {
+          "word": "a",
+          "frequency": 4,
+          "examples": []
+        }
+      ],
+      "e": [
+        {
+          "word": "we",
+          "frequency": 9,
+          "examples": []
+        },
+        {
+          "word": "e",
+          "frequency": 7,
+          "examples": []
+        },
+        {
+          "word": "he",
+          "frequency": 5,
+          "examples": []
+        }
+      ],
+      "i": [
+        {
+          "word": "i",
+          "frequency": 3,
+          "examples": []
+        },
+        {
+          "word": "big",
+          "frequency": 2,
+          "examples": []
+        },
+        {
+          "word": "shit",
+          "frequency": 1,
+          "examples": []
+        }
+      ],
+      "o": [
+        {
+          "word": "so",
+          "frequency": 146,
+          "examples": [
+            "soooo",
+            "sooo",
+            "sooooooooo"
+          ]
+        },
+        {
+          "word": "o",
+          "frequency": 18,
+          "examples": [
+            "ooooooo",
+            "ooo",
+            "oooo"
+          ]
+        },
+        {
+          "word": "no",
+          "frequency": 15,
+          "examples": [
+            "nooooooooooooooooooooooo",
+            "noooooooo",
+            "nooooo"
+          ]
+        }
+      ],
+      "u": [
+        {
+          "word": "huge",
+          "frequency": 6,
+          "examples": [
+            "huuuuuge",
+            "huuuuge"
+          ]
+        },
+        {
+          "word": "nyu",
+          "frequency": 2,
+          "examples": []
+        },
+        {
+          "word": "hugee",
+          "frequency": 1,
+          "examples": []
+        }
+      ]
+    },
+    "male": {
+      "a": [
+        {
+          "word": "ah",
+          "frequency": 5,
+          "examples": [
+            "aaaaaaaaah"
+          ]
+        },
+        {
+          "word": "ya",
+          "frequency": 3,
+          "examples": []
+        },
+        {
+          "word": "and",
+          "frequency": 3,
+          "examples": []
+        }
+      ],
+      "e": [
+        {
+          "word": "we",
+          "frequency": 8,
+          "examples": []
+        },
+        {
+          "word": "ie",
+          "frequency": 2,
+          "examples": []
+        },
+        {
+          "word": "trexample",
+          "frequency": 2,
+          "examples": []
+        }
+      ],
+      "i": [
+        {
+          "word": "i",
+          "frequency": 17,
+          "examples": [
+            "iii"
+          ]
+        },
+        {
+          "word": "right",
+          "frequency": 4,
+          "examples": [
+            "riiiiight"
+          ]
+        },
+        {
+          "word": "ffvi",
+          "frequency": 3,
+          "examples": []
+        }
+      ],
+      "o": [
+        {
+          "word": "so",
+          "frequency": 65,
+          "examples": [
+            "sooooo",
+            "sooo",
+            "soooo"
+          ]
+        },
+        {
+          "word": "wo",
+          "frequency": 8,
+          "examples": []
+        },
+        {
+          "word": "o",
+          "frequency": 7,
+          "examples": [
+            "oooo",
+            "ooo"
+          ]
+        }
+      ],
+      "u": [
+        {
+          "word": "you",
+          "frequency": 1,
+          "examples": []
+        },
+        {
+          "word": "fused",
+          "frequency": 1,
+          "examples": []
+        },
+        {
+          "word": "ehhfuckyou",
+          "frequency": 1,
+          "examples": []
+        }
+      ]
+    }
+  }
+}

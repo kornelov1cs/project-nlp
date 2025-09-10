@@ -1,0 +1,129 @@
+Exercise 4d: Full Corpus Analysis - All 5 Vowel Duplication Approaches
+================================================================================
+
+Total files analyzed: 650
+Total original characters: 7,569,495
+
+APPROACH COMPARISON SUMMARY:
+==================================================
+Approach        Files Changed   Total Changes   Char Reduction  Efficiency %
+----------------------------------------------------------------------------------
+aggressive      260             831             4658            40.0        
+reduce2plus     649             831             47377           99.8        
+conservative    260             831             3827            40.0        
+extreme_only    140             609             3155            21.5        
+smart           278             822             3636            42.8        
+
+================================================================================
+
+DETAILED ANALYSIS: AGGRESSIVE
+----------------------------------------
+Files with changes: 260
+Total transformations: 831
+Character reduction: 4658
+Unique transformation types: 83
+
+Top 10 Most Frequent Transformations:
+   1. 'ooo' → 'oo' (171 times)
+   2. 'oooo' → 'oo' (102 times)
+   3. 'ooooo' → 'oo' ( 68 times)
+   4. 'eee' → 'ee' ( 65 times)
+   5. 'aaa' → 'aa' ( 61 times)
+   6. 'aaaa' → 'aa' ( 34 times)
+   7. 'iii' → 'ii' ( 28 times)
+   8. 'oooooo' → 'oo' ( 24 times)
+   9. 'ooooooo' → 'oo' ( 23 times)
+  10. 'eeee' → 'ee' ( 22 times)
+
+DETAILED ANALYSIS: REDUCE2PLUS
+----------------------------------------
+Files with changes: 649
+Total transformations: 831
+Character reduction: 47377
+Unique transformation types: 83
+
+Top 10 Most Frequent Transformations:
+   1. 'ooo' → 'oo' (171 times)
+   2. 'oooo' → 'oo' (102 times)
+   3. 'ooooo' → 'oo' ( 68 times)
+   4. 'eee' → 'ee' ( 65 times)
+   5. 'aaa' → 'aa' ( 61 times)
+   6. 'aaaa' → 'aa' ( 34 times)
+   7. 'iii' → 'ii' ( 28 times)
+   8. 'oooooo' → 'oo' ( 24 times)
+   9. 'ooooooo' → 'oo' ( 23 times)
+  10. 'eeee' → 'ee' ( 22 times)
+
+DETAILED ANALYSIS: CONSERVATIVE
+----------------------------------------
+Files with changes: 260
+Total transformations: 831
+Character reduction: 3827
+Unique transformation types: 83
+
+Top 10 Most Frequent Transformations:
+   1. 'ooo' → 'oo' (171 times)
+   2. 'oooo' → 'oo' (102 times)
+   3. 'ooooo' → 'oo' ( 68 times)
+   4. 'eee' → 'ee' ( 65 times)
+   5. 'aaa' → 'aa' ( 61 times)
+   6. 'aaaa' → 'aa' ( 34 times)
+   7. 'iii' → 'ii' ( 28 times)
+   8. 'oooooo' → 'oo' ( 24 times)
+   9. 'ooooooo' → 'oo' ( 23 times)
+  10. 'eeee' → 'ee' ( 22 times)
+
+DETAILED ANALYSIS: EXTREME_ONLY
+----------------------------------------
+Files with changes: 140
+Total transformations: 609
+Character reduction: 3155
+Unique transformation types: 83
+
+Top 10 Most Frequent Transformations:
+   1. 'ooo' → 'oo' (106 times)
+   2. 'oooo' → 'oo' ( 68 times)
+   3. 'ooooo' → 'oo' ( 68 times)
+   4. 'aaa' → 'aa' ( 28 times)
+   5. 'eee' → 'ee' ( 24 times)
+   6. 'oooooo' → 'oo' ( 24 times)
+   7. 'ooooooo' → 'oo' ( 23 times)
+   8. 'eeee' → 'ee' ( 20 times)
+   9. 'aaaa' → 'aa' ( 17 times)
+  10. 'oooooooo' → 'oo' ( 15 times)
+
+DETAILED ANALYSIS: SMART
+----------------------------------------
+Files with changes: 278
+Total transformations: 822
+Character reduction: 3636
+Unique transformation types: 83
+
+Top 10 Most Frequent Transformations:
+   1. 'ooo' → 'oo' (168 times)
+   2. 'oooo' → 'oo' (102 times)
+   3. 'ooooo' → 'oo' ( 66 times)
+   4. 'eee' → 'ee' ( 65 times)
+   5. 'aaa' → 'aa' ( 61 times)
+   6. 'aaaa' → 'aa' ( 34 times)
+   7. 'iii' → 'ii' ( 28 times)
+   8. 'oooooo' → 'oo' ( 24 times)
+   9. 'eeee' → 'ee' ( 22 times)
+  10. 'ooooooo' → 'oo' ( 22 times)
+
+COMPARATIVE ANALYSIS:
+========================================
+Approaches ranked by aggressiveness (most to least changes):
+1. aggressive: 831 changes
+2. reduce2plus: 831 changes
+3. conservative: 831 changes
+4. smart: 822 changes
+5. extreme_only: 609 changes
+
+RECOMMENDATIONS:
+--------------------
+• Most aggressive: reduce2plus - affects the most text but risks damaging legitimate words
+• Most conservative: extreme_only - safest but may miss many normalization opportunities
+• Balanced choice: conservative - good balance of normalization and preservation
+• Context-aware: smart - best quality but computationally complex
+• Middle ground: aggressive - moderate normalization with some risk
