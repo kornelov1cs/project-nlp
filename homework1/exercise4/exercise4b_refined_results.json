@@ -13,9 +13,11 @@
       ]
     },
     {
-      "word": "ha",
+      "word": "a",
       "frequency": 5,
-      "examples": []
+      "examples": [
+        "aaa"
+      ]
     }
   ],
   "e": [
@@ -25,17 +27,24 @@
       "examples": []
     },
     {
-      "word": "he",
-      "frequency": 6,
+      "word": "e",
+      "frequency": 7,
       "examples": []
     },
     {
-      "word": "whe",
-      "frequency": 5,
+      "word": "he",
+      "frequency": 6,
       "examples": []
     }
   ],
   "i": [
+    {
+      "word": "i",
+      "frequency": 20,
+      "examples": [
+        "iii"
+      ]
+    },
     {
       "word": "right",
       "frequency": 5,
@@ -47,11 +56,6 @@
       "word": "ffvi",
       "frequency": 3,
       "examples": []
-    },
-    {
-      "word": "shit",
-      "frequency": 3,
-      "examples": []
     }
   ],
   "o": [
@@ -59,9 +63,18 @@
       "word": "so",
       "frequency": 211,
       "examples": [
-        "sooooooooo",
         "sooo",
+        "sooooooooo",
         "soooo"
+      ]
+    },
+    {
+      "word": "o",
+      "frequency": 25,
+      "examples": [
+        "ooo",
+        "oooo",
+        "ooooooo"
       ]
     },
     {
@@ -71,14 +84,6 @@
         "nooooo",
         "nooooooooooooooooooooooo",
         "noooooooo"
-      ]
-    },
-    {
-      "word": "wo",
-      "frequency": 15,
-      "examples": [
-        "wooo",
-        "wooooooo"
       ]
     }
   ],
