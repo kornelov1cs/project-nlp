@@ -1,0 +1,147 @@
+Exercise 4: Finding Vowel Duplications in Blog Corpus
+============================================================
+Tool: Python with regular expressions
+Corpus: /Users/kornelovics/EIT/UT/NLP/project-nlp/homework1/assets/blogs
+Processing 650 files from /Users/kornelovics/EIT/UT/NLP/project-nlp/homework1/assets/blogs
+Processed 100 files...
+Processed 200 files...
+Processed 300 files...
+Processed 400 files...
+Processed 500 files...
+Processed 600 files...
+Completed processing 650 files.
+
+================================================================================
+VOWEL DUPLICATION ANALYSIS RESULTS
+================================================================================
+
+REGULAR EXPRESSION PATTERNS USED:
+--------------------------------------------------
+
+emphatic_identical_pattern:
+\b\w*([aeiou])\1{2,}\w*\b - Finds words with 3+ consecutive identical vowels (clear emphasis).\n  \b = word boundary\n  \w* = zero or more word characters before\n  ([aeiou]) = capture group for a vowel\n  \1{2,} = two or more additional repetitions of the captured vowel (3+ total)\n  \w* = zero or more word characters after\n  \b = word boundary
+
+mixed_emphasis_pattern:
+\b\w{1,20}(?:[aeiou]{2,}.*[aeiou]{2,})\w{0,20}\b - Finds words with multiple vowel duplications.\n  \w{1,20} = 1-20 word characters (prevents matching entire paragraphs)\n  (?:...) = non-capturing group\n  [aeiou]{2,}.*[aeiou]{2,} = vowel duplication, any chars, another vowel duplication
+
+long_vowel_pattern:
+\b\w*[aeiou]{4,}\w*\b - Finds words with 4+ consecutive vowels (extreme emphasis).\n  [aeiou]{4,} = any vowel sequence of 4 or more characters
+
+repeated_pairs_pattern:
+\b\w*([aeiou])\1{3,}\w*\b - Finds words with 4+ identical consecutive vowels.\n  ([aeiou])\1{3,} = a vowel followed by 3+ more of the same (4+ total identical vowels)
+
+Emphatic Identical Vowels (3+ consecutive identical vowels)
+-----------------------------------------------------------
+Total unique words found: 413
+Top 20 most frequent words:
+   1. 'sooo' - in 53 files, 78 total occurrences
+   2. 'soooo' - in 43 files, 54 total occurrences
+   3. 'sooooo' - in 30 files, 38 total occurrences
+   4. 'iii' - in 13 files, 19 total occurrences
+   5. 'oooh' - in 10 files, 11 total occurrences
+   6. 'ooo' - in 9 files, 10 total occurrences
+   7. 'invisiblenodetreeexample' - in 1 files, 10 total occurrences
+   8. 'oooo' - in 8 files, 9 total occurrences
+   9. 'wooo' - in 8 files, 9 total occurrences
+  10. 'soooooo' - in 9 files, 9 total occurrences
+  11. 'soooooooo' - in 7 files, 7 total occurrences
+  12. 'sooooooo' - in 7 files, 7 total occurrences
+  13. 'looooong' - in 6 files, 6 total occurrences
+  14. 'aaa' - in 4 files, 5 total occurrences
+  15. 'heee' - in 4 files, 5 total occurrences
+  16. 'ooowh' - in 1 files, 5 total occurrences
+  17. 'sooooooooo' - in 4 files, 4 total occurrences
+  18. 'weeee' - in 4 files, 4 total occurrences
+  19. 'noooooo' - in 4 files, 4 total occurrences
+  20. 'weee' - in 2 files, 4 total occurrences
+  ... and 393 more words
+
+Mixed Emphasis (multiple vowel duplications in same word)
+---------------------------------------------------------
+Total unique words found: 264
+Top 20 most frequent words:
+   1. 'torquay harbour' - in 1 files, 3 total occurrences
+   2. 'automationtechies' - in 1 files, 2 total occurrences
+   3. 'lookout point' - in 1 files, 2 total occurrences
+   4. 'building the next generation' - in 1 files, 2 total occurrences
+   5. 'shai and his very beautiful' - in 2 files, 2 total occurrences
+   6. 'videotaping shai' - in 2 files, 2 total occurrences
+   7. 'sleeping like babies - shai' - in 2 files, 2 total occurrences
+   8. 'shai learns' - in 2 files, 2 total occurrences
+   9. 'shai wants more cereal' - in 2 files, 2 total occurrences
+  10. 'shai and aunt' - in 2 files, 2 total occurrences
+  11. 'george and shai' - in 2 files, 2 total occurrences
+  12. 'mountain road' - in 1 files, 2 total occurrences
+  13. 'good site sleep good i sleep' - in 1 files, 2 total occurrences
+  14. 'fourth day..inveraray harbour' - in 1 files, 2 total occurrences
+  15. 'touring... must... go... *dies' - in 2 files, 2 total occurrences
+  16. 'beats them to death' - in 2 files, 2 total occurrences
+  17. 'beauties' - in 1 files, 2 total occurrences
+  18. 'leader of the free' - in 1 files, 1 total occurrences
+  19. 'beach...a view of a mountain' - in 1 files, 1 total occurrences
+  20. 'looking east' - in 1 files, 1 total occurrences
+  ... and 244 more words
+
+Long Vowel Sequences (4+ consecutive vowels)
+--------------------------------------------
+Total unique words found: 304
+Top 20 most frequent words:
+   1. 'soooo' - in 43 files, 54 total occurrences
+   2. 'sooooo' - in 30 files, 38 total occurrences
+   3. 'queue' - in 14 files, 24 total occurrences
+   4. 'oooo' - in 8 files, 9 total occurrences
+   5. 'soooooo' - in 9 files, 9 total occurrences
+   6. 'soooooooo' - in 7 files, 7 total occurrences
+   7. 'sooooooo' - in 7 files, 7 total occurrences
+   8. 'looooong' - in 6 files, 6 total occurrences
+   9. 'sooooooooo' - in 4 files, 4 total occurrences
+  10. 'weeee' - in 4 files, 4 total occurrences
+  11. 'noooooo' - in 4 files, 4 total occurrences
+  12. 'weeeeeeeee' - in 3 files, 4 total occurrences
+  13. 'sooooooooooooo' - in 3 files, 3 total occurrences
+  14. 'huuuuge' - in 3 files, 3 total occurrences
+  15. 'toooo' - in 3 files, 3 total occurrences
+  16. 'noooooooo' - in 2 files, 3 total occurrences
+  17. 'nooooo' - in 3 files, 3 total occurrences
+  18. 'riiiiight' - in 2 files, 3 total occurrences
+  19. 'loooong' - in 3 files, 3 total occurrences
+  20. 'ooooh' - in 3 files, 3 total occurrences
+  ... and 284 more words
+
+Repeated Pairs (4+ identical consecutive vowels)
+------------------------------------------------
+Total unique words found: 271
+Top 20 most frequent words:
+   1. 'soooo' - in 43 files, 54 total occurrences
+   2. 'sooooo' - in 30 files, 38 total occurrences
+   3. 'oooo' - in 8 files, 9 total occurrences
+   4. 'soooooo' - in 9 files, 9 total occurrences
+   5. 'soooooooo' - in 7 files, 7 total occurrences
+   6. 'sooooooo' - in 7 files, 7 total occurrences
+   7. 'looooong' - in 6 files, 6 total occurrences
+   8. 'sooooooooo' - in 4 files, 4 total occurrences
+   9. 'weeee' - in 4 files, 4 total occurrences
+  10. 'noooooo' - in 4 files, 4 total occurrences
+  11. 'weeeeeeeee' - in 3 files, 4 total occurrences
+  12. 'sooooooooooooo' - in 3 files, 3 total occurrences
+  13. 'huuuuge' - in 3 files, 3 total occurrences
+  14. 'toooo' - in 3 files, 3 total occurrences
+  15. 'noooooooo' - in 2 files, 3 total occurrences
+  16. 'nooooo' - in 3 files, 3 total occurrences
+  17. 'riiiiight' - in 2 files, 3 total occurrences
+  18. 'loooong' - in 3 files, 3 total occurrences
+  19. 'ooooh' - in 3 files, 3 total occurrences
+  20. 'woooo' - in 3 files, 3 total occurrences
+  ... and 251 more words
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+emphatic_identical_unique_words: 413
+emphatic_identical_total_occurrences: 777
+mixed_emphasis_unique_words: 264
+mixed_emphasis_total_occurrences: 282
+long_vowels_unique_words: 304
+long_vowels_total_occurrences: 519
+repeated_pairs_unique_words: 271
+repeated_pairs_total_occurrences: 461

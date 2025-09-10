@@ -39,9 +39,9 @@ Example structure:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## 👨‍💻 Authors
 
-- **Student 1 Name** - [GitHub](https://github.com/student2)
 - **Kornel Palkovics** - [GitHub](https://github.com/kornelov1cs)
+- **Student 2 Name** - [GitHub](https://github.com/student2)

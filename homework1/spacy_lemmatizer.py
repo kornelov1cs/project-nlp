@@ -43,13 +43,36 @@ for word in words:
 unique_lemmas = set(lemmatized)
 print(f"Unique lemmas after SpaCy lemmatization: {len(unique_lemmas)}")
 
+# Save results to file
+output_filename = "assets/spacy_lemmatized_results.txt"
+with open(output_filename, "w", encoding="utf-8") as output_file:
+    # Write header to both console and file
+    header = "{0:20}{1:20}".format("--Original--", "--Lemma--")
+    print(f"\n{header}")
+    output_file.write(header + "\n")
+
+    # Write all lemmatization results (without POS tag)
+    for word, lemma in zip(words, lemmatized):
+        line = "{0:20}{1:20}".format(word, lemma)
+        print(line)
+        output_file.write(line + "\n")
+
+    # Write summary to file
+    output_file.write(f"\nTotal rows: {len(words)}\n")
+    output_file.write(f"Unique lemmas: {len(unique_lemmas)}\n")
+
+# Print summary
+print(f"\nTotal rows: {len(words)}")
+print(f"Unique lemmas: {len(unique_lemmas)}")
+print(f"Results saved to: {output_filename}")
+
+# Print the list of unique lemmatized words
+print(f"\nList of unique lemmatized words:")
+print("-" * 40)
+sorted_unique_lemmas = sorted(unique_lemmas)
+for i, lemma in enumerate(sorted_unique_lemmas, 1):
+    print(f"{i:4}. {lemma}")
+
 # Show examples where lemmas differ
 changed = [(orig, lem) for orig, lem, _ in lema_pairs if orig != lem]
-print(f"Words that changed: {len(changed)}")
-
-# Print first 20 results
-print("\nFirst 20 lemmatization results:")
-print(f"{'Original':15} {'Lemma':15} {'POS Tag':10}")
-print("-" * 45)
-for i in range(20):
-    print(f"{words[i]:15} {lemmatized[i]:15} {lema_pairs[i][2]:10}")
+print(f"\nWords that changed: {len(changed)}")

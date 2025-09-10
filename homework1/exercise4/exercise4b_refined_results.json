@@ -1,0 +1,105 @@
+{
+  "a": [
+    {
+      "word": "way",
+      "frequency": 8,
+      "examples": []
+    },
+    {
+      "word": "ah",
+      "frequency": 7,
+      "examples": [
+        "aaaaaaaaah"
+      ]
+    },
+    {
+      "word": "ha",
+      "frequency": 5,
+      "examples": []
+    }
+  ],
+  "e": [
+    {
+      "word": "we",
+      "frequency": 17,
+      "examples": []
+    },
+    {
+      "word": "he",
+      "frequency": 6,
+      "examples": []
+    },
+    {
+      "word": "whe",
+      "frequency": 5,
+      "examples": []
+    }
+  ],
+  "i": [
+    {
+      "word": "right",
+      "frequency": 5,
+      "examples": [
+        "riiiiight"
+      ]
+    },
+    {
+      "word": "ffvi",
+      "frequency": 3,
+      "examples": []
+    },
+    {
+      "word": "shit",
+      "frequency": 3,
+      "examples": []
+    }
+  ],
+  "o": [
+    {
+      "word": "so",
+      "frequency": 211,
+      "examples": [
+        "sooooooooo",
+        "sooo",
+        "soooo"
+      ]
+    },
+    {
+      "word": "no",
+      "frequency": 22,
+      "examples": [
+        "nooooo",
+        "nooooooooooooooooooooooo",
+        "noooooooo"
+      ]
+    },
+    {
+      "word": "wo",
+      "frequency": 15,
+      "examples": [
+        "wooo",
+        "wooooooo"
+      ]
+    }
+  ],
+  "u": [
+    {
+      "word": "huge",
+      "frequency": 6,
+      "examples": [
+        "huuuuge",
+        "huuuuuge"
+      ]
+    },
+    {
+      "word": "nyu",
+      "frequency": 2,
+      "examples": []
+    },
+    {
+      "word": "lurrrve",
+      "frequency": 2,
+      "examples": []
+    }
+  ]
+}

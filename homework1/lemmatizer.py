@@ -47,7 +47,7 @@ print(f"Words that changed: {len(changed_words)}")
 print("\nFirst 20 lemmatization results:")
 print("{0:15}{1:15}{2:10}".format("Original", "Lemma", "POS Tag"))
 print("-" * 40)
-for i in range(20):
+for i in range(len(words)):
     word = words[i]
     lemma = lemmatized_words[i]
     pos_tag = nltk.pos_tag([word])[0][1]
