@@ -1,2 +1,12 @@
 nlp-env/
 .DS_Store
+
+# Large data files (>10MB)
+homework3/medline_norm.txt
+homework3/astro_norm.txt
+homework3/bbc-text.csv
+
+# General patterns for large data files
+*.txt.gz
+*.csv.gz
+*_norm.txt
