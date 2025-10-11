@@ -1,0 +1,9 @@
+Rule 
+S -> NP VP
+
+Rule 
+PP -> P NP
+
+; Add your own rules below, following the same format
+
+
